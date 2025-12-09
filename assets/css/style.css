@@ -14,3 +14,139 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;background:#f7f7f8;margin:0}
 .badge-accent{background:var(--accent);color:white}
 .product-card{transition:transform .25s}
 .product-card:hover{transform:translateY(-6px)}
+/* ============================
+   ESTILOS PRINCIPALES
+============================ */
+:root {
+  --accent: #ff4081;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f7f7f8;
+  margin: 0;
+}
+
+
+/* ============================
+   ENCABEZADO (NAVBAR)
+============================ */
+header .navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+
+/* ============================
+   HERO
+============================ */
+.hero {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1610879328923-3de1e04c3ddb');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 380px;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  padding: 120px 0;
+}
+
+
+/* ============================
+   PRODUCTOS
+============================ */
+.product-card {
+  transition: transform .25s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+
+/* ============================
+   CARRITO LATERAL
+============================ */
+.cart-sidebar {
+  position: fixed;
+  right: -420px;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  background: white;
+  box-shadow: -8px 0 24px rgba(0,0,0,0.12);
+  padding: 20px;
+  transition: all .35s;
+  z-index: 2000;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-items {
+  min-height: 220px;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e6e6e6;
+}
+
+.cart-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.badge-accent {
+  background: var(--accent);
+  color: white;
+}
+
+
+/* ============================
+   PIE DE PÁGINA
+============================ */
+footer {
+  background: #111;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
